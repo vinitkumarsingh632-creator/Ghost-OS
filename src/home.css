@@ -9,3 +9,14 @@
     border-radius: 40px;
     color: white;
 }
+.message{
+    background: rgba(0, 0, 0, 0.312);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+.grimReaper{
+    opacity: 0;
+    transition: opacity 1s;
+}
