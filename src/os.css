@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bgImage{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    filter: blur(0.4);
+    filter: brightness(0.5);
+}
