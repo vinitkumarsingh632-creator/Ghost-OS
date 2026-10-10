@@ -1,0 +1,11 @@
+.imageLogo{
+    width: 6vw;
+    
+}
+.crossButton:hover{
+    transition: color 0.5s ease-in-out;
+color: red;
+}
+.imageWindow{
+    position: relative;
+}

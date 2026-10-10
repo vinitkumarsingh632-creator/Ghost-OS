@@ -20,7 +20,7 @@ export default function Clock () {
          <div id='clockContainer' >
             <div className='FirstRow' style={{display:'flex',gap:'0.7rem',fontFamily:'Special Elite',fontSize:'2rem'}}>
                 <div className='date'>{date.getDate()}</div>
-                <div className='month' style={{color:'red'}}>{months[date.getMonth()]}</div>
+                <div className='month' style={{color:'red',fontFamily:'Aladin'}}>{months[date.getMonth()]}</div>
                 <div className='year'>{date.getFullYear()}</div>
             </div>
             <div className='SecondRow' style={{fontFamily:'Special Elite',fontSize:'1.4rem'}}>
