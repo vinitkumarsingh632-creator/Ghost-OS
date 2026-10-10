@@ -8,4 +8,24 @@ color: red;
 }
 .imageWindow{
     position: relative;
+    left: 500px;
+    top: 100px;
+    width: 50vw;
+    background-color: rgba(241, 240, 240, 0.751);
+}
+.imageContainer img:hover{
+    border: 10px solid yellow;
+}
+.imageContainer img{
+    cursor: pointer;
+}
+.setBg{
+    background-color: red;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Aladin;
+    cursor: pointer;
+}
+.header{
+    background-color: rgb(45, 44, 44);
 }
