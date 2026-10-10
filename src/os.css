@@ -9,4 +9,5 @@
     position: absolute;
     filter: blur(0.4);
     filter: brightness(0.5);
+    z-index: -1;
 }

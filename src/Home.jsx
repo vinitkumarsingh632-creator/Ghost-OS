@@ -23,7 +23,9 @@ export default function Home () {
     
     return (
         <>
-        <div className='volumeWarning'>
+        {
+           !osPage && <div>
+            <div className='volumeWarning'>
             <h2 style={{textAlign:'center',fontFamily:'Aladin',fontSize:'3rem'}}>Warning</h2>
             <p style={{fontSize:'1.5rem',fontFamily:'Special Elite'}}>Increase Your Volume For Better Experience.</p>
         </div>
@@ -38,8 +40,11 @@ export default function Home () {
                             <div style={{marginTop:'1rem',backgroundColor:'white',padding:'0.4rem',width:'30%',textAlign:'center',borderRadius:'20px',fontSize:'2rem',cursor:'pointer'}} className='enterOS'>Enter the OS</div>
                         </div>
                 </div>
-                {osPage?<OS/>:undefined}
+                
          </div>
+           </div>
+        }
+         {osPage?<OS/>:undefined}
          
         </>
     )
