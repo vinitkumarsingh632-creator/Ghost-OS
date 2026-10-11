@@ -7,7 +7,7 @@ import Image from './Image'
 import Footer from './Footer'
 import HC from './HC'
 import GhostDetector from './GhostDetector'
-export default function OS (){
+export default function OS ({shutdown}){
     useEffect(()=>{
          document.getElementsByClassName('bgSound')[0].play()
     },[])
@@ -22,7 +22,7 @@ export default function OS (){
             <GhostDetector/>
            </div>
          <Clock/>
-         <Footer/>
+         <Footer shutdown={shutdown}/>
          </div>
         </>
     )

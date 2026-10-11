@@ -13,11 +13,11 @@
 .message{
     background: rgba(0, 0, 0, 0.312);
     border-radius: 20px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 2s ease-in-out;
 
 }
 .grimReaper{
-    opacity: 0;
+    opacity: 1;
     transition: opacity 2s ease-in-out;
 }
