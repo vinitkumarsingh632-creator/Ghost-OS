@@ -1,0 +1,19 @@
+.footerContainer{
+    background-color: rgba(249, 249, 249, 0.206);
+    position: absolute;
+    bottom: 0%;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    z-index: 1000;
+}
+.dot{
+    background-color: rgba(15, 196, 15, 0.678);
+    box-shadow: 15px 0 20px rgba(0, 128, 0, 0.54);
+}
+.powerContainer img{
+    height:5rem ;
+}

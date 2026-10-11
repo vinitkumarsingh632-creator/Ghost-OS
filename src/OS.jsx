@@ -4,6 +4,7 @@ import defaultBg from './assets/defaultBG.jpg'
 import { useEffect } from 'react'
 import Clock from './Clock'
 import Image from './Image'
+import Footer from './Footer'
 import HC from './HC'
 import GhostDetector from './GhostDetector'
 export default function OS (){
@@ -21,6 +22,7 @@ export default function OS (){
             <GhostDetector/>
            </div>
          <Clock/>
+         <Footer/>
          </div>
         </>
     )
