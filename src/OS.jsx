@@ -4,7 +4,7 @@ import defaultBg from './assets/defaultBG.jpg'
 import { useEffect } from 'react'
 import Clock from './Clock'
 import Image from './Image'
-
+import HC from './HC'
 export default function OS (){
     useEffect(()=>{
          document.getElementsByClassName('bgSound')[0].play()
@@ -16,6 +16,7 @@ export default function OS (){
          <div>
            <div style={{paddingLeft:'2rem',display:'flex','flexDirection':'column','gap':'2rem'}}>
             <Image/>
+            <HC/>
            </div>
          <Clock/>
          </div>
