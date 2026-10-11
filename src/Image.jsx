@@ -15,7 +15,7 @@ export default function Image () {
     },[currentImage])
    return (
     <>
-    <div style={{display:'flex',justifyContent:'center','alignContent':'center',flexDirection:'column',width:'8vw',cursor:'pointer',gap:'0.5rem'}} onClick={()=>{
+    <div style={{display:'flex',justifyContent:'center','alignContent':'center',flexDirection:'column',width:'12rem',cursor:'pointer',gap:'0.5rem'}} onClick={()=>{
         document.getElementsByClassName('imageWindow')[0].style.display = 'block'
     }}>
         <img src={appLogo} alt="logo" className='imageLogo'/>

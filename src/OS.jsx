@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import Clock from './Clock'
 import Image from './Image'
 import HC from './HC'
+import GhostDetector from './GhostDetector'
 export default function OS (){
     useEffect(()=>{
          document.getElementsByClassName('bgSound')[0].play()
@@ -14,9 +15,10 @@ export default function OS (){
         <img className="bgImage" src={defaultBg}/>
          <audio src={defaultAudio} loop autoPlay className='bgSound'></audio>
          <div>
-           <div style={{paddingLeft:'2rem',display:'flex','flexDirection':'column','gap':'2rem'}}>
+           <div style={{paddingLeft:'2rem',display:'flex','flexDirection':'column','gap':'3rem'}}>
             <Image/>
             <HC/>
+            <GhostDetector/>
            </div>
          <Clock/>
          </div>
