@@ -21,6 +21,7 @@ export default function OS ({shutdown}){
             <Image/>
             <HC/>
             <GhostDetector/>
+          
            </div>
          <Clock/>
          <Footer shutdown={shutdown}/>
