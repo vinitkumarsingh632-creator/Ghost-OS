@@ -14,7 +14,15 @@ Ghost OS is a dark themed + spooky webOS. It start from a warning at the first p
 
 ## Features
 
-It contains three apps. First app is background app, it is to change the background. It is draggable also, to drag it just left on the click on the header and drag it while holding the left click. So simple. Second app is a redirect link to 3AM, it is the most horror and spooky part as it redirects you to the hub of such spooky and horror projects. Third app is a ghost detector, this app is built by me and submitted to 3AM, it basically detects whether any ghost is present near you or not. Therefore, it is mandatory to use it because I had put a lots of efforts in building it. And if you do not try then my ghost friends will also stay with you.
+It contains three apps. First app is background app, it is to change the background. It is draggable also, to drag it just left on the click on the header and drag it while holding the left click. So simple.
+
+Second app is a redirect link to 3AM, it is the most horror and spooky part as it redirects you to the hub of such spooky and horror projects. 
+
+Third app is a ghost detector, this app is built by me and submitted to 3AM, it basically detects whether any ghost is present near you or not. Therefore, it is mandatory to use it because I had put a lots of efforts in building it. And if you do not try then my ghost friends will also stay with you.
+
+## To Try It
+
+Click here, https://ghost-os-phi.vercel.app/
 
 ## Challenges
 
