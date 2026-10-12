@@ -4,6 +4,7 @@ import defaultBg from './assets/defaultBG.jpg'
 import { useEffect } from 'react'
 import Clock from './Clock'
 import Image from './Image'
+import Thank from './Thank'
 import Footer from './Footer'
 import HC from './HC'
 import GhostDetector from './GhostDetector'
@@ -15,7 +16,7 @@ export default function OS ({shutdown}){
         <>
         <img className="bgImage" src={defaultBg}/>
          <audio src={defaultAudio} loop autoPlay className='bgSound'></audio>
-         <div>
+         <div className='mainContainer'>
            <div style={{paddingLeft:'2rem',display:'flex','flexDirection':'column','gap':'3rem'}}>
             <Image/>
             <HC/>
@@ -24,6 +25,7 @@ export default function OS ({shutdown}){
          <Clock/>
          <Footer shutdown={shutdown}/>
          </div>
+         <Thank/>
         </>
     )
 }

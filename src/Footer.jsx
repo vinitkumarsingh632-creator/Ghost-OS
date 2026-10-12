@@ -1,6 +1,6 @@
 import './footer.css'
 import powerButton from './assets/powerButton.png'
-export default function Footer ({shutdown}) {
+export default function Footer () {
     return (
         <>
          <div className='footerContainer' >
@@ -24,7 +24,8 @@ export default function Footer ({shutdown}) {
                         document.getElementsByClassName('shutdownWarning')[0].style.display = 'none'
                     }}>Cancel</div>
                     <div className='shutdownButton' onClick={()=>{
-                        
+                        document.getElementsByClassName('mainContainer')[0].style.display = 'none'
+                        document.getElementsByClassName('thankContainer')[0].style.display = 'flex'
                     }}>Shut Down</div>
                    </div>
              </div>
