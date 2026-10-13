@@ -26,6 +26,10 @@ Fourth App is a terminal, where you can check your access, change color of text,
 
 Click here, https://ghost-os-phi.vercel.app/
 
+## What I have Learned
+
+I have learned lots of things especially through the draggable window and terminal. The draggable window was hard but not much as I have already build similar thing in stardance but the terminal part was unique and learned a lots of things from it like complex debugging in react and I have learned lots of things and one of those is that when we manipulate DOM using JS in react then when the state changes those DOM manipulation gets reset. Another is that when the state changes and the components re-renders then the local variables also gets reset so in order to save it, we need to use, "useRef" hook. Like this I have learned lots of things through this project by failing multiple times.
+
 ## Challenges
 
 To be honest, everything was easy excepting the draggable window and terminal. Both are really super hard. But the terminal was more harder to build than draggable window. At a point of time, I thought to drop the plan of building the terminal and create something but I still tried and finally build it.
