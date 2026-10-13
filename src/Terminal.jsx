@@ -5,6 +5,7 @@ export default function Terminal () {
      let pointerDown = useRef(false)
         let window = useRef({x:500,y:100})
         const previous = useRef({x:0,y:0})
+       
     return (
         <>
          <div className='terminal' style={{display:'flex',justifyContent:'center','alignContent':'center',flexDirection:'column',width:'6vw',cursor:'pointer',gap:'1rem'}} onClick={()=>{
