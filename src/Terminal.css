@@ -16,3 +16,6 @@
     flex-direction: column;
     gap: 1rem;
 }
+.sameColor{
+    color: white;
+}

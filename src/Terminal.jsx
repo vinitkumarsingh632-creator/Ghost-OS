@@ -7,7 +7,12 @@ export default function Terminal () {
      let pointerDown = useRef(false)
         let window = useRef({x:500,y:100})
         const path = 'root@ghostos:~$'
+        const [color,changeColor] = useState(false)
+        const [help,setHelp] = useState(false)
+        const [clear,setClear]  = useState(false)
+        const [scan,setScan] = useState(false)
         const previous = useRef({x:0,y:0})
+        const [history,setHistory] = useState([])
         const [print,setPrint] = useState(false)
         const [command,setCommand] = useState("")
        
@@ -62,19 +67,17 @@ export default function Terminal () {
             </div>
             <div className='mainTerminal'>
                   <div className='write' style={{paddingLeft:'1rem'}}>
-                      <div className='entry' style={{display:'flex',flexDirection:'column',fontSize:'1.3rem',color:'white',gap:'0.6rem'}}>
+                      <div className='entry sameColor' style={{display:'flex',flexDirection:'column',fontSize:'1.3rem',gap:'0.6rem'}}>
                        <div >Ghost OS {'[VERSION 1.0.0]'}</div>
                        <div>Type 'help' to see all available commands.</div>
                   </div>
                    <div style={{paddingTop:'0.6rem',display:'flex','gap':'1rem'}} >
                     <div style={{fontSize:'1.3rem',color:'blue'}}>{path}</div>
-                    <input type="text" style={{fontSize:'1.3rem',paddingLeft:'0.4rem',backgroundColor:'black',color:'white',borderRadius:'10px',fontFamily:'Special Elite'}} onChange={(event)=>{
+                    <input type="text" style={{fontSize:'1.3rem',paddingLeft:'0.4rem',backgroundColor:'black',borderRadius:'10px',fontFamily:'Special Elite'}} className='sameColor' onChange={(event)=>{
                         setCommand(event.target.value)
                     }} onKeyDown={(event)=>{
-                        if(event.key == "Enter"){
-                            event.target.disabled = true
-                            help(document.querySelector('.mainTerminal'))
-                        }
+                        
+
                     }}/>
                    </div>
                   </div>
