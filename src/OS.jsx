@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import Clock from './Clock'
 import Image from './Image'
 import Thank from './Thank'
+import Terminal from './Terminal'
 import Footer from './Footer'
 import HC from './HC'
 import GhostDetector from './GhostDetector'
@@ -21,7 +22,7 @@ export default function OS ({shutdown}){
             <Image/>
             <HC/>
             <GhostDetector/>
-          
+            <Terminal/>
            </div>
          <Clock/>
          <Footer shutdown={shutdown}/>

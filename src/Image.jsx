@@ -33,7 +33,7 @@ export default function Image () {
         pointerDown.current = false
        }} onPointerMove={(event)=>{
         if(pointerDown.current == true){
-             console.log(pointerDown)
+             
             document.getElementsByClassName('imageWindow')[0].style.left = `${window.current.x + (event.clientX - previous.current.x)}px`
             document.getElementsByClassName('imageWindow')[0].style.top = `${window.current.y + (event.clientY - previous.current.y)}px`
              window.current.x = window.current.x + (event.clientX - previous.current.x)
