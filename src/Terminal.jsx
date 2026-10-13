@@ -1,6 +1,7 @@
 import './Terminal.css'
 import logo from './assets/Terminal.png'
 import { useRef,useState } from 'react'
+import help from './Terminal/Help'
 import Help from './Terminal/Help'
 export default function Terminal () {
      let pointerDown = useRef(false)
@@ -65,14 +66,14 @@ export default function Terminal () {
                        <div >Ghost OS {'[VERSION 1.0.0]'}</div>
                        <div>Type 'help' to see all available commands.</div>
                   </div>
-                   <div style={{paddingTop:'0.6rem',display:'flex','gap':'1rem'}}>
+                   <div style={{paddingTop:'0.6rem',display:'flex','gap':'1rem'}} >
                     <div style={{fontSize:'1.3rem',color:'blue'}}>{path}</div>
                     <input type="text" style={{fontSize:'1.3rem',paddingLeft:'0.4rem',backgroundColor:'black',color:'white',borderRadius:'10px',fontFamily:'Special Elite'}} onChange={(event)=>{
                         setCommand(event.target.value)
                     }} onKeyDown={(event)=>{
                         if(event.key == "Enter"){
                             event.target.disabled = true
-                            
+                            help(document.querySelector('.mainTerminal'))
                         }
                     }}/>
                    </div>
