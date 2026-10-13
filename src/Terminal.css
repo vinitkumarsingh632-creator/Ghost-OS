@@ -3,7 +3,7 @@
     left: 500px;
     top:100px;
 }
-.helpContainer,.colorContainer,.clearContainer,.scanContainer{
+.helpContainer,.colorContainer,.clearContainer,.scanContainer,.whoamiContainer{
     display: flex;
     gap: 3rem;
     font-size: 1.3rem;

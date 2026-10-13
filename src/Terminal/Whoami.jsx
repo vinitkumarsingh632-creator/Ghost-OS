@@ -1,9 +1,9 @@
 export default function Whoami (){
     return (
-        <>
-           <div style={{paddingTop:'0.6rem',fontSize:'1.3rem',color:'white',fontFamily:'Special Elite'}}>
-            root
-           </div>
-        </>
+        <div className='mainContainers'>
+            <div className='whoamiContainer container'>
+                <div>root</div>
+            </div>
+        </div>
     )
 }
