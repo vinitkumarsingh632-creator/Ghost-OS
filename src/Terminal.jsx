@@ -1,10 +1,14 @@
 import './Terminal.css'
 import logo from './assets/Terminal.png'
 import { useRef,useState } from 'react'
+import Help from './Terminal/Help'
 export default function Terminal () {
      let pointerDown = useRef(false)
         let window = useRef({x:500,y:100})
+        const path = 'root@ghostos:~$'
         const previous = useRef({x:0,y:0})
+        const [print,setPrint] = useState(false)
+        const [command,setCommand] = useState("")
        
     return (
         <>
@@ -56,7 +60,23 @@ export default function Terminal () {
 </svg>
             </div>
             <div className='mainTerminal'>
-                 
+                  <div className='write' style={{paddingLeft:'1rem'}}>
+                      <div className='entry' style={{display:'flex',flexDirection:'column',fontSize:'1.3rem',color:'white',gap:'0.6rem'}}>
+                       <div >Ghost OS {'[VERSION 1.0.0]'}</div>
+                       <div>Type 'help' to see all available commands.</div>
+                  </div>
+                   <div style={{paddingTop:'0.6rem',display:'flex','gap':'1rem'}}>
+                    <div style={{fontSize:'1.3rem',color:'blue'}}>{path}</div>
+                    <input type="text" style={{fontSize:'1.3rem',paddingLeft:'0.4rem',backgroundColor:'black',color:'white',borderRadius:'10px',fontFamily:'Special Elite'}} onChange={(event)=>{
+                        setCommand(event.target.value)
+                    }} onKeyDown={(event)=>{
+                        if(event.key == "Enter"){
+                            event.target.disabled = true
+                            
+                        }
+                    }}/>
+                   </div>
+                  </div>
             </div>
 
          </div>
